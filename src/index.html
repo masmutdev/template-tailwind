@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.19.0/tabler-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <div class="main-content flex flex-col justify-center items-center w-full max-w-full px-4 mb-24">
+      <!-- Navbar -->
+      <nav class="bg-white shadow-md mt-4 p-4 flex justify-between items-center rounded-lg w-full max-w-[400px]">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 text-center">
+          <img src="logo.png" alt="Logo" class="h-8 w-8" />
+        </div>
+
+        <p class="text-xl font-semibold">Nama Website</p>
+
+        <!-- Menu Icon -->
+        <div class="cursor-pointer">
+          <i class="ti ti-menu-deep font-bold text-[24px]"></i>
+        </div>
+      </nav>
+      <!-- Grid Menu -->
+      <h1 class="my-4 text-lg font-extrabold leading-none tracking-tight text-gray-900 dark:text-white text-center">Components</h1>
+
+      <form class="w-full max-w-[400px] my-4" id="searchForm">
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input
+            type="search"
+            id="default-search"
+            class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Cari Component..."
+            required
+          />
+        </div>
+      </form>
+
+      <div class="grid grid-cols-3 gap-4 mt-2 w-full max-w-[400px]" id="componentGrid">
+        <!-- Accordion Component -->
+        <a href="components/accordion.html" class="accordion bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsAccordion">
+          <i class="ti ti-map text-[36px] text-gray-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Accordion</p>
+        </a>
+
+        <!-- Alerts Component -->
+        <a href="components/alert.html" class="alert bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsAlerts">
+          <i class="ti ti-alert-circle text-[36px] text-red-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Alerts</p>
+        </a>
+
+        <!-- Avatar Component -->
+        <a href="components/avatar.html" class="avatar bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsAvatar">
+          <i class="ti ti-user-circle text-[36px] text-blue-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Avatar</p>
+        </a>
+
+        <!-- Badge Component -->
+        <a href="components/badge.html" class="badge bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsBadge">
+          <i class="ti ti-badge text-[36px] text-yellow-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Badge</p>
+        </a>
+
+        <!-- Banner Component -->
+        <a href="components/banner.html" class="banner bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsBanner">
+          <i class="ti ti-flag text-[36px] text-green-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Banner</p>
+        </a>
+
+        <!-- Bottom Navigation Component -->
+        <a href="components/bottom-navigation.html" class="bottom-navigation bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsBottomNav">
+          <i class="ti ti-navigation text-[36px] text-purple-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Bottom Navigation</p>
+        </a>
+
+        <!-- Breadcrumb Component -->
+        <a href="components/breadcrumb.html" class="breadcrumb bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsBreadcrumb">
+          <i class="ti ti-home text-[36px] text-orange-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Breadcrumb</p>
+        </a>
+
+        <!-- Buttons Component -->
+        <a href="components/buttons.html" class="buttons bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsButtons">
+          <i class="ti ti-click text-[36px] text-indigo-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Buttons</p>
+        </a>
+
+        <!-- Button Group Component -->
+        <a href="components/button-group.html" class="button-group bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsButtonGroup">
+          <i class="ti ti-layout text-[36px] text-pink-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Button Group</p>
+        </a>
+
+        <!-- Card Component -->
+        <a href="components/card.html" class="card bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsCard">
+          <i class="ti ti-credit-card text-[36px] text-teal-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Card</p>
+        </a>
+
+        <!-- Carousel Component -->
+        <a href="components/carousel.html" class="carousel bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsCarousel">
+          <i class="ti ti-carousel text-[36px] text-fuchsia-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Carousel</p>
+        </a>
+
+        <!-- Chat Bubble Component -->
+        <a href="components/chat-bubble.html" class="chat-bubble bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsChat">
+          <i class="ti ti-message text-[36px] text-lime-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Chat Bubble</p>
+        </a>
+
+        <!-- Clipboard Component -->
+        <a href="components/clipboard.html" class="clipboard bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsClipboard">
+          <i class="ti ti-clipboard text-[36px] text-cyan-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Clipboard</p>
+        </a>
+
+        <!-- Datepicker Component -->
+        <a href="components/datepicker.html" class="datepicker bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsDatepicker">
+          <i class="ti ti-calendar text-[36px] text-yellow-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Datepicker</p>
+        </a>
+
+        <!-- Device Mockups Component -->
+        <a href="components/device-mockups.html" class="device-mockups bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsDevice">
+          <i class="ti ti-device-laptop text-[36px] text-violet-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Device Mockups</p>
+        </a>
+
+        <!-- Drawer Component -->
+        <a href="components/drawer.html" class="drawer bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsDrawer">
+          <i class="ti ti-drawer text-[36px] text-coral-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Drawer</p>
+        </a>
+
+        <!-- Dropdowns Component -->
+        <a href="components/dropdowns.html" class="dropdowns bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsDropdowns">
+          <i class="ti ti-chevron-down text-[36px] text-sky-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Dropdowns</p>
+        </a>
+
+        <!-- Footer Component -->
+        <a href="components/footer.html" class="footer bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsFooter">
+          <i class="ti ti-layout-footer text-[36px] text-amber-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Footer</p>
+        </a>
+
+        <!-- Forms Component -->
+        <a href="components/forms.html" class="forms bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsForms">
+          <i class="ti ti-file-text text-[36px] text-gray-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Forms</p>
+        </a>
+
+        <!-- Gallery Component -->
+        <a href="components/gallery.html" class="gallery bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsGallery">
+          <i class="ti ti-gallery text-[36px] text-rose-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Gallery</p>
+        </a>
+
+        <!-- Indicators Component -->
+        <a href="components/indicators.html" class="indicators bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsIndicators">
+          <i class="ti ti-signal text-[36px] text-green-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Indicators</p>
+        </a>
+
+        <!-- Jumbotron Component -->
+        <a href="components/jumbotron.html" class="jumbotron bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsJumbotron">
+          <i class="ti ti-layout-column text-[36px] text-indigo-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Jumbotron</p>
+        </a>
+
+        <!-- KBD Component -->
+        <a href="components/kbd.html" class="kbd bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsKBD">
+          <i class="ti ti-keyboard text-[36px] text-purple-600"></i>
+          <p class="text-[10px] font-semibold mt-2">KBD</p>
+        </a>
+
+        <!-- List Group Component -->
+        <a href="components/list-group.html" class="list-group bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsList">
+          <i class="ti ti-list text-[36px] text-teal-600"></i>
+          <p class="text-[10px] font-semibold mt-2">List Group</p>
+        </a>
+
+        <!-- Mega Menu Component -->
+        <a href="components/mega-menu.html" class="mega-menu bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsMegaMenu">
+          <i class="ti ti-layout-navbar text-[36px] text-pink-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Mega Menu</p>
+        </a>
+
+        <!-- Modal Component -->
+        <a href="components/modal.html" class="modal bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsModal">
+          <i class="ti ti-window text-[36px] text-emerald-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Modal</p>
+        </a>
+
+        <!-- Navbar Component -->
+        <a href="components/navbar.html" class="navbar bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsNavbar">
+          <i class="ti ti-menu text-[36px] text-amber-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Navbar</p>
+        </a>
+
+        <!-- Pagination Component -->
+        <a href="components/pagination.html" class="pagination bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsPagination">
+          <i class="ti ti-arrows-h text-[36px] text-blue-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Pagination</p>
+        </a>
+
+        <!-- Popover Component -->
+        <a href="components/popover.html" class="popover bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsPopover">
+          <i class="ti ti-bubble text-[36px] text-sky-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Popover</p>
+        </a>
+
+        <!-- Progress Component -->
+        <a href="components/progress.html" class="progress bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsProgress">
+          <i class="ti ti-progress text-[36px] text-lime-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Progress</p>
+        </a>
+
+        <!-- Rating Component -->
+        <a href="components/rating.html" class="rating bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsRating">
+          <i class="ti ti-star text-[36px] text-yellow-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Rating</p>
+        </a>
+
+        <!-- Sidebar Component -->
+        <a href="components/sidebar.html" class="sidebar bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsSidebar">
+          <i class="ti ti-sidebar text-[36px] text-orange-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Sidebar</p>
+        </a>
+
+        <!-- Skeleton Component -->
+        <a href="components/skeleton.html" class="skeleton bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsSkeleton">
+          <i class="ti ti-skeleton text-[36px] text-gray-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Skeleton</p>
+        </a>
+
+        <!-- Speed Dial Component -->
+        <a href="components/speed-dial.html" class="speed-dial bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsSpeed">
+          <i class="ti ti-dial text-[36px] text-red-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Speed Dial</p>
+        </a>
+
+        <!-- Spinner Component -->
+        <a href="components/spinner.html" class="spinner bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsSpinner">
+          <i class="ti ti-spinner text-[36px] text-violet-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Spinner</p>
+        </a>
+
+        <!-- Stepper Component -->
+        <a href="components/stepper.html" class="stepper bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsStepper">
+          <i class="ti ti-step-forward text-[36px] text-fuchsia-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Stepper</p>
+        </a>
+
+        <!-- Tables Component -->
+        <a href="components/tables.html" class="tables bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsTables">
+          <i class="ti ti-table text-[36px] text-teal-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Tables</p>
+        </a>
+
+        <!-- Tabs Component -->
+        <a href="components/tabs.html" class="tabs bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsTabs">
+          <i class="ti ti-tab text-[36px] text-cyan-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Tabs</p>
+        </a>
+
+        <!-- Timeline Component -->
+        <a href="components/timeline.html" class="timeline bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsTimeline">
+          <i class="ti ti-timeline text-[36px] text-yellow-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Timeline</p>
+        </a>
+
+        <!-- Toast Component -->
+        <a href="components/toast.html" class="toast bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsToast">
+          <i class="ti ti-toast text-[36px] text-emerald-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Toast</p>
+        </a>
+
+        <!-- Tooltips Component -->
+        <a href="components/tooltips.html" class="tooltips bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsTooltips">
+          <i class="ti ti-tool text-[36px] text-indigo-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Tooltips</p>
+        </a>
+
+        <!-- Typography Component -->
+        <a href="components/typography.html" class="typography bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsTypography">
+          <i class="ti ti-typography text-[36px] text-pink-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Typography</p>
+        </a>
+
+        <!-- Video Component -->
+        <a href="components/video.html" class="video bg-white shadow-md p-4 rounded-lg flex flex-col items-center" id="ComponentsVideo">
+          <i class="ti ti-video text-[36px] text-gray-600"></i>
+          <p class="text-[10px] font-semibold mt-2">Video</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sticky Footer Menu -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-md p-4 flex justify-between items-center w-full max-w-[400px] mx-auto">
+      <a href="#" class="flex flex-col items-center text-gray-600 hover:text-gray-900">
+        <i class="ti ti-home text-[24px]"></i>
+        <span class="text-sm">Home</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-600 hover:text-gray-900">
+        <i class="ti ti-search text-[24px]"></i>
+        <span class="text-sm">Search</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-600 hover:text-gray-900">
+        <i class="ti ti-bell text-[24px]"></i>
+        <span class="text-sm">Notifications</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-600 hover:text-gray-900">
+        <i class="ti ti-message text-[24px]"></i>
+        <span class="text-sm">Messages</span>
+      </a>
+      <a href="#" class="flex flex-col items-center text-gray-600 hover:text-gray-900">
+        <i class="ti ti-user text-[24px]"></i>
+        <span class="text-sm">Profile</span>
+      </a>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
