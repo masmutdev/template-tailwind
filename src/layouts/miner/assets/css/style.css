@@ -1,6 +1,6 @@
 /* Mengatur font Poppins untuk seluruh halaman */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Kustomisasi box-shadow untuk elemen tertentu */
@@ -11,4 +11,36 @@ body {
 /* Box-shadow dengan warna hijau seperti contoh yang diberikan */
 .green-shadow {
   box-shadow: 0 4px 10px rgba(74, 222, 128, 0.2); /* Bayangan hijau dengan opacity */
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  background-size: 400% 400%;
+  animation: gradient-rotate 5s linear infinite;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0, #ff0080);
+  background-size: 400% 400%;
+  border-radius: inherit;
+  animation: gradient-rotate 5s linear infinite;
+  padding: 2px;
+}
+
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

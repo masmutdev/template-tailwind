@@ -106,114 +106,48 @@
       <!-- Produk -->
       <div class="w-full max-w-[400px] mt-4" style="margin-bottom: 100px">
         <div class="flex flex-row justify-center items-center">
-          <h5 class="text-white text-lg">Kategori Produk</h5>
+          <h5 class="text-white text-lg">Kartu Bank</h5>
         </div>
 
-        <!-- Bagian Tombol Filter -->
-        <div class="flex justify-start gap-2 mb-4 mt-4">
-          <a href="#" class="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">PAKET 1</a>
-          <a href="#" class="bg-gray-700 text-white py-2 px-4 rounded">PAKET 2</a>
-          <a href="#" class="bg-gray-700 text-white py-2 px-4 rounded">PAKET 3</a>
-        </div>
-
-        <div class="bg-gray-900 text-white p-4 rounded-lg shadow-md mb-4 w-full max-w-[400px]">
-          <div class="flex justify-between">
-            <!-- Gambar dan Deskripsi -->
-            <div class="flex flex-col w-full">
-              <div class="flex flex-row">
-                <img src="assets/img/demo.jpg" alt="Server Image" class="w-20 h-20 rounded-lg mr-2" />
-                <div class="flex flex-col">
-                  <h3 class="text-lg font-bold">HDX–A5801</h3>
-                  <div class="flex items-center space-x-2">
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Penyelesaian satu kali
-                    </button>
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Waktu tersisa
-                    </button>
-                  </div>
-                  <span class="text-white font-bold" style="font-size: 10px !important; width: max-content !important">08:21:21</span>
-                </div>
-              </div>
-              <!-- Harga dan Tombol Go -->
-              <div class="flex flex-row justify-between items-center">
-                <p class="text-yellow-400 text-xl font-bold">RP 600,000</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-2">Go</a>
-              </div>
+        <div class="bg-gray-900 green-shadow text-white p-6 rounded-lg shadow-lg max-w-sm mx-auto mt-4">
+          <form class="max-w-sm mx-auto">
+            <div class="mb-5">
+              <label for="nama_bank" class="block mb-2 text-sm font-medium text-white">Nama Bank</label>
+              <input
+                type="text"
+                id="nama_bank"
+                class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Masukkan Nama Bank"
+                required
+              />
             </div>
-          </div>
-          <div class="mt-4 text-sm text-gray-400 flex justify-between">
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Pendapatan per waktu</p>
+            <div class="mb-5">
+              <label for="norek" class="block mb-2 text-sm font-medium text-white">Nomor Rekening Bank</label>
+              <input
+                type="text"
+                id="norek"
+                class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Masukkan Nomor Rekening"
+                required
+              />
             </div>
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Total Pendapatan</p>
+            <div class="mb-5">
+              <label for="pemilik" class="block mb-2 text-sm font-medium text-white">Nama Pemegang Kartu</label>
+              <input
+                type="text"
+                id="pemilik"
+                class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Masukkan Nama Pemilik"
+                required
+              />
             </div>
-            <div class="flex flex-col">
-              <span class="text-white">3 Hari</span>
-              <p style="font-size: 10px">Masa Berlaku</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-gray-900 text-white p-4 rounded-lg shadow-md mb-4 w-full max-w-[400px]">
-          <div class="flex justify-between">
-            <!-- Gambar dan Deskripsi -->
-            <div class="flex flex-col w-full">
-              <div class="flex flex-row">
-                <img src="assets/img/demo.jpg" alt="Server Image" class="w-20 h-20 rounded-lg mr-2" />
-                <div class="flex flex-col">
-                  <h3 class="text-lg font-bold">HDX–A5801</h3>
-                  <div class="flex items-center space-x-2">
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Penyelesaian satu kali
-                    </button>
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Waktu tersisa
-                    </button>
-                  </div>
-                  <span class="text-white font-bold" style="font-size: 10px !important; width: max-content !important">08:21:21</span>
-                </div>
-              </div>
-              <!-- Harga dan Tombol Go -->
-              <div class="flex flex-row justify-between items-center">
-                <p class="text-yellow-400 text-xl font-bold">RP 600,000</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-2">GO</a>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 text-sm text-gray-400 flex justify-between">
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Pendapatan per waktu</p>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Total Pendapatan</p>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-white">3 Hari</span>
-              <p style="font-size: 10px">Masa Berlaku</p>
-            </div>
-          </div>
+            <button
+              type="submit"
+              class="text-white bg-green-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full w-auto px-5 py-2.5 text-center bg-blue-600 hover:bg-green-500 focus:ring-blue-800"
+            >
+              SIMPAN
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -238,6 +172,6 @@
       </a>
     </div>
 
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

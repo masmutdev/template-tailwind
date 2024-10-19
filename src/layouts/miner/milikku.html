@@ -105,115 +105,158 @@
 
       <!-- Produk -->
       <div class="w-full max-w-[400px] mt-4" style="margin-bottom: 100px">
-        <div class="flex flex-row justify-center items-center">
-          <h5 class="text-white text-lg">Kategori Produk</h5>
-        </div>
-
-        <!-- Bagian Tombol Filter -->
-        <div class="flex justify-start gap-2 mb-4 mt-4">
-          <a href="#" class="bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">PAKET 1</a>
-          <a href="#" class="bg-gray-700 text-white py-2 px-4 rounded">PAKET 2</a>
-          <a href="#" class="bg-gray-700 text-white py-2 px-4 rounded">PAKET 3</a>
-        </div>
-
-        <div class="bg-gray-900 text-white p-4 rounded-lg shadow-md mb-4 w-full max-w-[400px]">
-          <div class="flex justify-between">
-            <!-- Gambar dan Deskripsi -->
-            <div class="flex flex-col w-full">
-              <div class="flex flex-row">
-                <img src="assets/img/demo.jpg" alt="Server Image" class="w-20 h-20 rounded-lg mr-2" />
-                <div class="flex flex-col">
-                  <h3 class="text-lg font-bold">HDX–A5801</h3>
-                  <div class="flex items-center space-x-2">
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Penyelesaian satu kali
-                    </button>
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Waktu tersisa
-                    </button>
-                  </div>
-                  <span class="text-white font-bold" style="font-size: 10px !important; width: max-content !important">08:21:21</span>
-                </div>
-              </div>
-              <!-- Harga dan Tombol Go -->
-              <div class="flex flex-row justify-between items-center">
-                <p class="text-yellow-400 text-xl font-bold">RP 600,000</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-2">Go</a>
-              </div>
+        <!-- Bagian atas, berisi informasi pengguna -->
+        <div class="flex items-center justify-between mb-4 rounded-lg p-1">
+          <!-- Avatar dan informasi pengguna -->
+          <div class="flex items-center">
+            <div class="rounded-full flex items-center justify-center mr-2">
+              <img src="go-miner-logo.webp" class="h-10 w-10" alt="Avatar" />
             </div>
-          </div>
-          <div class="mt-4 text-sm text-gray-400 flex justify-between">
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Pendapatan per waktu</p>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Total Pendapatan</p>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-white">3 Hari</span>
-              <p style="font-size: 10px">Masa Berlaku</p>
+            <div class="ml-4">
+              <p class="text-lg font-semibold text-white">082144084542</p>
+              <p class="text-white text-sm">ZGGJG8</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-gray-900 text-white p-4 rounded-lg shadow-md mb-4 w-full max-w-[400px]">
-          <div class="flex justify-between">
-            <!-- Gambar dan Deskripsi -->
-            <div class="flex flex-col w-full">
-              <div class="flex flex-row">
-                <img src="assets/img/demo.jpg" alt="Server Image" class="w-20 h-20 rounded-lg mr-2" />
-                <div class="flex flex-col">
-                  <h3 class="text-lg font-bold">HDX–A5801</h3>
-                  <div class="flex items-center space-x-2">
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Penyelesaian satu kali
-                    </button>
-                    <button
-                      type="button"
-                      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-2 py-2 text-center me-1 mb-2"
-                      style="font-size: 9px !important"
-                    >
-                      Waktu tersisa
-                    </button>
-                  </div>
-                  <span class="text-white font-bold" style="font-size: 10px !important; width: max-content !important">08:21:21</span>
-                </div>
+        <!-- Bagian isi ulang saldo -->
+        <div class="bg-gray-900 p-4 rounded-lg mb-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <div class="rounded-full flex items-center justify-center mr-2">
+                <!-- Icon dompet -->
+                <img src="assets/img/wallet.png" class="w-14 h-14" alt="Wallet" />
               </div>
-              <!-- Harga dan Tombol Go -->
-              <div class="flex flex-row justify-between items-center">
-                <p class="text-yellow-400 text-xl font-bold">RP 600,000</p>
-                <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-2">GO</a>
+              <div>
+                <p class="text-white">Isi Ulang Saldo</p>
+                <p class="text-xl text-white font-bold">Rp. 10.000.000</p>
               </div>
             </div>
           </div>
-          <div class="mt-4 text-sm text-gray-400 flex justify-between">
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Pendapatan per waktu</p>
+          <!-- Informasi saldo -->
+          <div class="mt-4">
+            <hr class="mb-4" />
+            <div class="flex flex-row justify-between items-center text-center text-gray-400">
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-sm">Rp. 0</p>
+                <p class="text-white" style="font-size: 10px">Saldo</p>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-sm">Rp. 0</p>
+                <p class="text-white" style="font-size: 10px">Penghasilan Hari Ini</p>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-sm">Rp. 0</p>
+                <p class="text-white" style="font-size: 10px">Total Pendapatan</p>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <span class="text-white">Rp. 1.440.000</span>
-              <p style="font-size: 10px">Total Pendapatan</p>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-white">3 Hari</span>
-              <p style="font-size: 10px">Masa Berlaku</p>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+              <a href="withdraw.html" class="bg-green-500 text-white text-center py-2 rounded-lg">Withdraw</a>
+              <a href="deposit.html" class="bg-green-500 text-white text-center py-2 rounded-lg">Isi Ulang</a>
             </div>
           </div>
+        </div>
+
+        <!-- Bagian menu -->
+        <div class="bg-gray-900 p-4 rounded-lg grid grid-cols-4 gap-4 text-center">
+          <!-- Undang Pengguna -->
+          <a href="undangan.html" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-qrcode text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Undang Pengguna</p>
+          </a>
+
+          <!-- Hadiah Undangan -->
+          <a href="#" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-gift text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Hadiah Undangan</p>
+          </a>
+
+          <!-- Detail -->
+          <a href="detail.html" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-file text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Detail</p>
+          </a>
+
+          <!-- Produk Saya -->
+          <a href="riwayat.html" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-server text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Produk Saya</p>
+          </a>
+
+          <!-- Menukarkan -->
+          <a href="#" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-currency-dollar text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Menukarkan</p>
+          </a>
+
+          <!-- Kartu Bank -->
+          <a href="kartu-bank.html" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-credit-card text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Kartu Bank</p>
+          </a>
+
+          <!-- Kontrak Kerja -->
+          <a href="kontrak-kerja.html" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-briefcase text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Kontrak Kerja</p>
+          </a>
+
+          <!-- Kolam Hadiah -->
+          <a href="#" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-trophy text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Kolam Hadiah</p>
+          </a>
+
+          <!-- Gaji Mingguan -->
+          <a href="#" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-calendar text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Gaji Mingguan</p>
+          </a>
+
+          <!-- Tentang Kami -->
+          <a href="tentang-kami.html" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-info-circle text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Tentang Kami</p>
+          </a>
+
+          <!-- Layanan Pelanggan -->
+          <a href="https://wa.me/6289510056758" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-headset text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">Layanan Pelanggan</p>
+          </a>
+
+          <!-- Nomor Versi -->
+          <a href="#" class="flex flex-col items-center">
+            <div class="bg-green-500 p-2 rounded-lg">
+              <i class="ti ti-recycle text-white text-3xl"></i>
+            </div>
+            <p class="text-sm text-white mt-2" style="font-size: 12px">
+              Nomor Versi <br />
+              (24.337.0.1)
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -238,6 +281,6 @@
       </a>
     </div>
 
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
