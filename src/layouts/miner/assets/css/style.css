@@ -1,0 +1,14 @@
+/* Mengatur font Poppins untuk seluruh halaman */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Kustomisasi box-shadow untuk elemen tertentu */
+.custom-shadow {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Bayangan berwarna putih */
+}
+
+/* Box-shadow dengan warna hijau seperti contoh yang diberikan */
+.green-shadow {
+  box-shadow: 0 4px 10px rgba(74, 222, 128, 0.2); /* Bayangan hijau dengan opacity */
+}
